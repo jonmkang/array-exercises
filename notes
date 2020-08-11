@@ -1,0 +1,19 @@
+2. Explore the push() method
+    when only one value is pushed:
+        The length is 1, capacity is 3, and the memory address is 0.
+
+    When 6 values are pushed:
+        The length is 6, capacity is 12, and the memory address is 3.
+        When the length is greater than the capacity, the capacity increases by the current length multiplied by three which is 4 * 3.  The pointer is then increased by the current size of the array which is 3.
+
+3. Exploring the pop() method
+
+    When 3 values are pop'd:
+        The length is 3, capacity is 12, and the memory address is 3.
+        The capacity of the array stays the same, but the last 3 values are removed.
+
+4. Understanding more about how arrays work
+    The printed item of the value 'tauhida' results in NaN.
+    My guess would be the array has initialized a slot for an integer and did not recognize a string in place of an integer and stored NaN instead.
+
+    _resize() reassigns the array to a new pointer where a larger size is allocated for the array.
